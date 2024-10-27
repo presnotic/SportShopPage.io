@@ -1,0 +1,458 @@
+@media screen and (max-width: 1600px){
+  #about .about-container-1{
+    gap: 20px;
+  }
+  #about .about-container-2{
+    gap: 20px;
+  }
+  #about{
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  body.active .home-container{
+    transform: translateX(0px);
+  }
+  body.active .shop-container{
+    transform: translateX(0px);
+  }
+
+  #shop{
+    margin-top: 100px;
+  }
+  .modal-window .window{
+    padding: 50px;
+  }
+  .contacts-content{
+    transform: scale(0.9);
+  }
+
+  .contacts-content .contacts-input{
+    backdrop-filter: blur(0px);
+  }
+  .contacts-content{
+    background: none;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .modal-window .window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 90vh;
+  }
+
+  .modal-window .window .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  .modal-window .window .image .fa-heart{
+    left: 0px;
+    top: 0px;
+
+  }
+
+  .modal-window .window .image img{
+    position: relative;
+  }
+
+  .modal-window .window .info-modal{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-window .window .info-modal .name{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .modal-window .window .info-modal .info{
+    text-align: center;
+  }
+
+  .modal-window .window .info-modal button{
+    width: 80%;
+  }
+
+  nav{
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    flex-direction: column;
+    background: var(--main-back);
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    right: -500px;
+    transition: .5s;
+    border: none;
+    border-radius: 0px; 
+  }
+
+  nav.active{
+    right: 0px;
+    transition: .5s;
+  }
+
+  nav a{
+    font-size: 30px;
+  }
+
+  header nav .fa-arrow-up{
+    display: block;
+    font-size: 30px;
+    color: var(--white);
+    transform: translateY(50px);
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: absolute;
+    bottom: 200px;
+    margin-left: 20px;
+  }
+  header .menu{
+    display: block;
+    font-size: 40px;
+    color: var(--second-color);
+    cursor: pointer;
+  }
+
+  #home .home-container .image{
+    position: relative;
+    height: 750px;
+    width: auto;
+    
+  }
+
+  #home .home-container{
+    justify-content: center;
+  }
+
+  #home .home-container .home-info{
+    justify-content: center;
+    text-align: center;
+  }
+
+  #home .home-container .home-info .home-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #home .home-container .home-info .home-info-text button{
+    transform: translateX(140px);
+  }
+}
+
+@media screen and (max-width: 700px){
+  
+  #about{
+    transform: scale(0.8);
+  }
+
+  .contacts-content .contacts-info h2{
+    font-size: 30px;
+  }
+
+  .contacts-content .contacts-info p{
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+
+  .contacts-content .contacts-input h2{
+    font-size: 30px;
+  }
+
+  .link-contacts{
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+
+  .contacts-links{
+    font-size: 25px;
+  }
+  
+  #home .home-container .image{
+    transform: scale(0.8);
+    right: 40px;
+  }
+  #home .home-container .home-info .home-info-text{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  #home .home-container .home-info .home-info-text button{
+    transform: translateX(60px);
+  }
+  #home .home-container .cards-home{
+    transform: scale(0.8);
+  }
+  
+  #home .home-container .home-info .slogan{
+    letter-spacing: 3px;
+  }
+
+  #home .home-container .home-info{
+    width: 80%;
+    transform: translateX(55px);
+  }
+  #shop{
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #contacts{
+    padding-bottom: 80px;
+  }
+
+  .button-up{
+    display: none;
+  }
+  header .menu{
+    display: none;
+  }
+
+  .nav-mobile{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 99;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--main-back);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 0px 20px var(--black);
+  }
+
+  .nav-mobile i{
+    font-size: 30px;
+    color: var(--second-color);
+  }
+
+  .art-3{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .newsWindow .newsModal{
+  height: 100vh;
+  width: 100vw;
+
+}
+
+  .newsWindow .newsModal .newsInfo i{
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+  }
+
+  .newsWindow .newsModal .newsInfo .news-header h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .newsWindow .newsModal .newsInfo .news-info{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  #news{
+    top: 420px;
+    max-height: 60vh;
+    transform: scale(0.75);
+  }
+
+  
+
+  .modal-window{
+    background: var(--grey);
+  }
+
+  .modal-window .window{
+    height: 100%;
+    width: 100vw;
+    box-shadow: none;
+  }
+
+  #about{
+    max-height: 100vh;
+    transform: scale(0.67);
+    top: 30px;
+  }
+
+  .modal-window .window .image .fa-heart{
+    left: 0px;
+    top: 0px;
+
+  }
+
+  #home .home-container .image{
+    transform: scale(0.6);
+    right: 30px;
+    height: 600px;
+    top: -40px;
+  }
+  #home .home-container .home-info .slogan{
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  #home .home-container .home-info{
+    width: 60%;
+    transform: translateX(120px);
+  }
+  #home .home-container .home-info .home-info-text button{
+    transform: translateX(-10px);
+  }
+  nav{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  header{
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 0px 20px var(--black);
+  }
+
+  header nav .fa-arrow-up{
+    position: absolute;
+    margin-left: 0px;
+
+  }
+
+    header .logo{
+    font-size: 17px;
+    letter-spacing: 5px;
+  }
+
+  header .header-icons{
+    font-size: 30px;
+  }
+
+  header .menu{
+    font-size: 30px;
+  }
+
+  .cart{
+    inset: 0 -500px 0 auto;
+    width: 100%;
+  }
+
+  #contacts{
+    top: 950px;
+  }
+
+  .modal-window .window .info-modal .info{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .art-3{
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+
+  #contacts{
+    top: 750px;
+    max-height: 60vh;
+  }
+
+  .contacts-content .contacts-info{
+    transform: scale(0.85);
+    top: 100px;
+    gap: 0px;
+  }
+
+  .contacts-content .contacts-input{
+    transform: scale(0.85);
+    top: 20px;
+  }
+
+  .contacts-content .contacts-input textarea{
+    height: 100px;
+    top: -40px;
+  }
+
+  .contacts-content .contacts-input button{
+    top: -40px;
+  }
+
+  #contacts{
+    min-height: 150vh;
+  }
+
+  .contacts-email input{
+    width: 200px;
+  }
+  .contacts-email button{
+    width: 50px;
+  }
+
+  #about{
+    margin-top: 40px;
+    transform: scale(0.5);
+    max-height: 60vh;
+  }
+  #home .home-container .image{
+    transform: scale(0.5);
+    right: 30px;
+    height: 450px;
+    top: -70px;
+  }
+
+  #news{
+    max-height: 100vh;
+    top: 310px;
+    transform: scale(0.60);
+  }
+
+  #home .home-container .home-info{
+    width: 50%;
+    transform: translateX(150px);
+  }
+
+  #home .home-container .home-info .home-info-text button{
+    transform: translateX(-40px);
+  }
+  #home .home-container .cards-home{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    top: -50px;
+  }
+  #home .home-container .cards-home .home-card button{
+    width: 110px;
+  }
+
+  .card-box .image img{
+    width: 70%;
+  }
+
+  .card-box{
+    font-size: 10px;
+    grid-template-columns: 70px 100px 15px 1fr;
+  }
+
+  .card-box .quantity span{
+    width: 15px;
+    height: 15px;
+    font-size: 13px;
+  }
+  header nav .fa-arrow-up{
+    bottom: 100px;
+  }
+}
+
